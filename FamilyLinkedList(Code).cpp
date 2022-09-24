@@ -71,7 +71,7 @@ int main()
     cout<<"Enter name of family member along with their age"<<endl;
     for(int i=0;i<n;i++)
     {
-        cout<<"Enter details of member :-";
+        cout<<"Enter details of member:- ";
         cin>>name[i]>>age[i];
     }
     Node* head = create(name, age, n);
