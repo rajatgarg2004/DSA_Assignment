@@ -1,14 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
-class Node{
+class Node
+{
     public:
-
     string name;
     int age;
     Node* next;
     Node* prev;
 
-    Node(string name, int age){
+    Node(string name, int age)
+    {
         this->name = name;
         this->age = age;
         next = NULL;
@@ -58,22 +59,19 @@ void print(Node* head)
     }
 }
 
-
-
-
 int main()
 {
     int n;
-    cout<<"Enter number of members in family: ";
+    cout<<"Enter number of members in family:- ";
     cin>>n;
 
     int *age = new int[n];
     string *name = new string[n];
 
-    cout<<"Enter name of family members with their ages"<<endl;
+    cout<<"Enter name of family member with their age:- "<<endl;
     for(int i=0;i<n;i++)
     {
-        cout<<"Enter details of member :";
+        cout<<"Enter details of member:- ";
         cin>>name[i]>>age[i];
     }
     Node* head = create(name, age, n);
