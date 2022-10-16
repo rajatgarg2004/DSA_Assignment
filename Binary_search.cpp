@@ -102,14 +102,14 @@ int main(){
     int mid, value;
     Node *head = takeinput();
     display(head);
-    cout << "Enter the value to check"<< endl;
+    cout << "Enter the element that you want to find:- "<< endl;
     cin >> value;
 
     cout <<"Linear Search:- "<< linear_search(head, value) << endl;
     if(binary_search(head, value)== NULL){
-        cout<< "value not present" << endl;
+        cout<< "value is not present" << endl;
     }
     else{
-        cout << "present"<< endl;
+        cout << "value is present"<< endl;
     }
 }
